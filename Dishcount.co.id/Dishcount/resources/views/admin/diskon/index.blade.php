@@ -26,8 +26,8 @@
                 </div>
 
                 {{-- Form Tambah Data  --}}
-                <a href="#tambah_diskon" class="btn btn-primary float-right mb-3" data-toggle="modal" data-target="#tambah_diskon"><strong><i class="fa fa-plus" aria-hidden="true"></i> Tambah Data</strong></a>
-                <div class="modal fade" id="tambah_diskon" tabindex="-1" role="dialog"
+                <a href="#add_diskon" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#add_diskon"><strong><i class="fa fa-plus" aria-hidden="true"></i> Tambah Data</strong></a>
+                <div class="modal fade" id="add_diskon" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -53,10 +53,12 @@
                                         <label for="">Nama Diskon</label>
                                         <input type="text" name="nama_diskon" class="form-control" placeholder="Isi Nama Diskon" required>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">Deskripsi</label>
                                         <textarea name="deskripsi" id="" cols="" rows="10" class="form-control ckeditor" required placeholder="Isi Deskripsi"></textarea>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">Gambar Diskon <i>(Ekstensi file .jpeg, .jpg, .png)</i></label>
                                         <div class="custom-file">
@@ -68,11 +70,14 @@
                                                 file...</label>
                                         </div>
                                     </div>
+
                                     <div class="form-group">
                                         <input type="submit" value="Simpan Data" class="btn btn-primary">
                                     </div>
+
                                 </form>
                             </div>
+
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" type="button"
                                     data-dismiss="modal">Cancel</button>
