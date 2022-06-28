@@ -10,7 +10,7 @@
 
         <div class="card mb-4">
             <div class="card-header">
-                <i class="fas fa-table mr-1"></i>
+                <i class="fas fa-table mr-2"></i>
                 Daftar User
             </div>
             <div class="card-body">
@@ -24,11 +24,12 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tambah Data Pelanggan</h5>
+                            <h5 class="modal-title" id="AddUser">Tambah Data User</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
+
                             <div class="modal-body">
                                 <form action="/user" method="POST">
                                     {{ csrf_field() }}
@@ -36,22 +37,27 @@
                                         <label for="">Nama</label>
                                         <input type="text" name="nama_lengkap" class="form-control" placeholder="Isi Nama" required>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">Email</label>
                                         <input type="email" name="email" class="form-control" placeholder="Isi Email" required>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">Password</label>
                                         <input type="password" name="password" class="form-control" placeholder="Isi Password" required>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">Konfirmasi Password</label>
                                         <input type="password" name="confirm_password" class="form-control" placeholder="Isi Konfirmasi Password" required>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">No. Telp</label>
-                                        <input type="number" name="telp_user" class="form-control" placeholder="Isi Telp" required>
+                                        <input type="number" name="telp_user" class="form-control" placeholder="Masukkan Nomor Telp" required>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">Level</label>
                                         <select name="id_level" class="custom-select" required>
@@ -61,11 +67,13 @@
                                             @endforeach
                                         </select>
                                     </div>
+
                                     <div class="form-group">
                                         <input type="submit" value="Simpan" class="btn btn-primary">
                                     </div>
                                 </form>
                             </div>
+
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" type="button"
                                     data-dismiss="modal">Cancel</button>
